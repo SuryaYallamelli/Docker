@@ -5,87 +5,101 @@
 Checking points for Media Queries
 -------------------------------*/
 
-$mobile: 576px;
-$tablet: 768px;
-$laptop: 992px;
-$desktop: 1200px;
+:root {
+    --mobile: 576px;
+    --tablet: 768px;
+    --laptop: 992px;
+    --desktop: 1200px;
+    --selectedcolor: #93bcdb;
+}
 
-/*-------------------------------
-  Selected row Background color
-  -------------------------------*/
-
-$selectedcolor: #93bcdb;
-* {
-    // background-color: red;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 25px;
-    margin-right: 40px;
-    padding: 0px;
-    box-sizing: border-box;
-    body {
-        font-family: sans-serif;
-        font-size: 10px;
-    }
+.container {
+    margin: 5% 15%;
 }
 
 #header {
-    // height: 100vh;
-    // width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    // background-color: red;
 }
 
-#table {
-    background-color: red;
-    // width: 800px;
-    // height: 120px;
-    // display: flex;
-    // flex-direction: row;
-    // align-items: center;
-    // justify-content: center;
+.img-tag {
+    margin: 0px 5px;
 }
 
-// 
-#table-head {
-    background-color: green;
-    // width: 500px;
+
+/*-----------------
+code for table
+------------------*/
+
+.table-tag {
+    height: 10px;
+    width: 100%;
+    // background-color: var(--selectedcolor);
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.table-head {
+    height: 10px;
 }
 
 .table-row {
+    height: 10px;
+}
+
+.table-img {
+    padding-top: 5px;
+}
+
+.trail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.subtext {
+    margin: 0px;
+    padding: 0px;
+    font-size: small;
+    color: rgb(139, 135, 135);
+}
+
+
+/*-----------------
+code for checkbox
+------------------*/
+
+#chkbox {
+    width: 23px;
+    height: 23px;
+}
+
+
+/*-----------------
+code for tablebody
+------------------*/
+
+// #table-body {
+//     margin-top: 50px;
+//     background-color: red;
+// }
+.data {
     // background-color: blue;
-    // width: 500px;
+    margin-left: 10px;
+    padding-left: 10px;
     // display: flex;
     // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
 }
 
-
-/*-------------------------------
-  Code for Headings
-  -------------------------------*/
-
-// #id-header {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     justify-content: center;
-//     gap: 0px;
-// }
-// #chemicalName-header {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     justify-content: center;
-//     gap: 0px;
-// }
-#sort-action {
-    background-image: url("./assets/icons8-sort-24.png");
-}
-
-.table-header {
+.content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
